@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade&subset=latin-ext');
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@media only screen and (min-height: 700px) {
+  .document {
+    margin-top: 100px;
+  }
+}
+
+html { 
+  background: url("../img/background.png"); 
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  color: #fff;
+}
+
+.hello {
+  font-size: 76px;
+  margin: 20px;
+  font-family: 'Bungee Shade', cursive;
+  letter-spacing: 5px;
+}
+
+p{
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: inherit;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 280px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+  font-family: inherit;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover, .button:active, .button:focus {
+  border: none;
+  outline:none;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+section{
+  margin-bottom: 20px;
+}
+
+a.icon {
+  color: gainsboro;
+  font-size: 3em;
+  margin: 10px;
+}
