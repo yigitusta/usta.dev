@@ -62,6 +62,11 @@ section p {
   width: 80%;
 }
 
+a.link:hover:before {
+ color: #f4511e;
+ transition: 0.5s all
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
