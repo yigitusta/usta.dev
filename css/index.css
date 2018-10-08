@@ -69,15 +69,15 @@ a.link:hover:before {
 
 .button {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #f4511e;
   border: none;
   color: inherit;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
-  width: 280px;
-  transition: all 0.5s;
+  padding: 16px;
+  width: 230px;
+  transition: all 0.3s;
   cursor: pointer;
   margin: 15px;
   font-family: inherit;
