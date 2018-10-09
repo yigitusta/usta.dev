@@ -21,7 +21,7 @@
         name.innerText = "MY NAME IS " + "イート。";
         break;
         case "turkey":
-        hello.innerText = "HELLO!";
+        hello.innerText = "HELLO";
         break;
     }
   }
