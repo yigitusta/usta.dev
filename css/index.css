@@ -14,9 +14,13 @@
   width: fit-content;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
   .document {
-    margin-top: 3vh
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 

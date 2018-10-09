@@ -20,6 +20,9 @@
         hello.innerText = "こんにちは";
         name.innerText = "MY NAME IS " + "イート。";
         break;
+        case "turkey":
+        hello.innerText = "Merhaba";
+        break;
     }
   }
 
@@ -33,7 +36,7 @@
 
   function getCountry() {
     return new Promise(function(resolve, reject) {
-      fetch("http://ip-api.com/json/")
+      fetch("https://extreme-ip-lookup.com/json/")
         .then(function(result) {
           return result.json();
         })
