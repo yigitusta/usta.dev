@@ -8,9 +8,9 @@
     const promises = [waitForDom(), getCountry()];
     Promise.all(promises)
       .then(function(results) {
-        const country = results.find(function(result) {
+        const { country } = results.find(function(result) {
           return typeof result === "object" && result.country;
-        }).country;
+        });
         changeHelloText(country);
       })
       .catch(function(error) {

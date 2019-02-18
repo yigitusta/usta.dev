@@ -9,11 +9,6 @@
                                   supported by Chrome and Opera */
 }
 
-.document {
-  margin: 10vh auto;
-  width: fit-content;
-}
-
 @media only screen and (max-width: 600px) {
   .document {
     margin: 0;
@@ -24,10 +19,14 @@
   }
 }
 
-body { 
+body {
   text-align: center;
   font-family: 'Bungee', cursive;
   color: #fff;
+}
+
+section:first-child {
+  margin-top: 15vh;
 }
 
 #background {
@@ -36,7 +35,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/background.png"); 
+  background: url("../img/background.png");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 2000px;
@@ -133,6 +132,10 @@ section{
 
 a.icon {
   color: gainsboro;
-  font-size: 3em;
+  font-size: 2.6em;
   margin: 10px;
+}
+
+.intro > * {
+  text-transform: uppercase;
 }
