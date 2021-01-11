@@ -1,2 +1,1 @@
-## yigitusta.com
-## yigit.js.org
+## usta.dev
