@@ -54,7 +54,7 @@ section:first-child {
 
 .hello {
   font-size: 76px;
-  margin: 20px;
+  margin: 20px 0px;
   font-family: "Bungee Shade", cursive;
   letter-spacing: 5px;
 }
