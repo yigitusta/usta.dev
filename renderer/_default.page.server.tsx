@@ -1,13 +1,13 @@
-import ReactDOMServer from 'react-dom/server';
-import React from 'react';
-import { PageShell } from './PageShell';
-import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr';
-import logoUrl from './logo.svg';
-import type { PageContextServer } from './types';
+import ReactDOMServer from "react-dom/server";
+import React from "react";
+import { PageShell } from "./PageShell";
+import { escapeInject, dangerouslySkipEscape } from "vite-plugin-ssr";
+import logoUrl from "./logo.svg";
+import type { PageContextServer } from "./types";
 
 export { render };
 // See https://vite-plugin-ssr.com/data-fetching
-export const passToClient = ['pageProps', 'urlPathname'];
+export const passToClient = ["pageProps", "urlPathname"];
 
 async function render(pageContext: PageContextServer) {
   const { Page, pageProps } = pageContext;
@@ -19,8 +19,8 @@ async function render(pageContext: PageContextServer) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports;
-  const title = (documentProps && documentProps.title) || 'Vite SSR app';
-  const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr';
+  const title = (documentProps && documentProps.title) || "Vite SSR app";
+  const desc = (documentProps && documentProps.description) || "App using Vite + vite-plugin-ssr";
 
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
