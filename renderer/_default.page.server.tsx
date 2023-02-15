@@ -18,11 +18,11 @@ async function render(pageContext: PageContextServer) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports;
-  const title = (documentProps && documentProps.title) || "Vite SSR app";
-  const desc = (documentProps && documentProps.description) || "App using Vite + vite-plugin-ssr";
+  const title = documentProps?.title || "Usta";
+  const desc = documentProps?.description || "Welcome to Usta's website.";
 
   const documentHtml = escapeInject`<!DOCTYPE html>
-    <html lang="en">
+    <html data-theme="emerald" lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -6,6 +6,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
     // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
     // Make sure it's always the last config, so it gets the chance to override other configs.
     "eslint-config-prettier",
@@ -21,6 +22,9 @@ module.exports = {
         paths: ["pages", "renderer", "server"],
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
+    },
+    tailwindcss: {
+      config: "tailwind.config.cjs",
     },
   },
   rules: {

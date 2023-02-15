@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./renderer/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bungee: ["Bungee", "cursive"],
+        bungeeShade: ["Bungee Shade", "cursive"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
