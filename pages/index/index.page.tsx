@@ -1,18 +1,18 @@
 import React from "react";
+import { GitHubIcon, InstagramIcon, LinkedInIcon, StackOverflowIcon } from "./icons";
 
 export function Page() {
   return (
-    <div className="hero min-h-screen bg-neutral font-bungee text-neutral-content">
+    <div className="hero min-h-screen bg-gradient-to-r from-cyan-800 via-violet-800 to-blue-800 font-bungee text-neutral-content">
       <div className="hero-content flex-col lg:flex-row lg:items-stretch">
-        <img alt="" src="/images/usta1.jpg" className="max-w-xs rounded-lg shadow-2xl" />
+        <img alt="" src="/images/usta3.png" className="max-w-xs rounded-lg shadow-2xl" />
         <div className="flex flex-col justify-between">
-          <h1 className="font-bungeeShade text-7xl tracking-wider">HELLO!</h1>
+          <h1 className="text-center font-bungeeShade text-7xl tracking-wider text-primary md:text-start">HELLO!</h1>
           <div className="flex grow flex-col justify-between gap-3 py-6 text-lg">
             <div>My name is Usta.</div>
-            <div>I&apos;m a Turkish software engineer based in Tokyo, Japan.</div>
-            <div>I have professional working experience in front-end, back-end, and cloud.</div>
+            <div>I&apos;m a software engineer based in Tokyo, Japan.</div>
             <div>
-              In my personal life, I enjoy doing CrossFit, cooking different kinds of food, listening to German rap
+              In my personal life, I enjoy doing CrossFit, cooking rather interesting food, listening to German rap
               music and organizing parties.
             </div>
             <div>
@@ -39,10 +39,16 @@ export function Page() {
               .
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-row justify-center gap-4 lg:justify-start">
+            <GitHubIcon className="w-12 fill-neutral-content transition-all hover:cursor-pointer" />
+            <StackOverflowIcon className="w-12 fill-neutral-content transition-all hover:cursor-pointer " />
+            <LinkedInIcon className="w-12 fill-neutral-content transition-all hover:cursor-pointer" />
+            <InstagramIcon className="w-12 fill-neutral-content transition-all hover:cursor-pointer" />
+          </div>
+          {/* <div className="flex justify-between">
             <button className="btn-accent btn-wide btn-lg btn text-2xl">Resume</button>
             <button className="btn-accent btn-wide btn-lg btn text-2xl">Transcript</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

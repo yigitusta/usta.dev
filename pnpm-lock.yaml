@@ -19,6 +19,7 @@ specifiers:
   prettier: ^2.8.4
   react: ^18.1.0
   react-dom: ^18.1.0
+  tailwind-merge: ^1.10.0
   tailwindcss: ^3.2.6
   ts-node: ^10.9.1
   typescript: ^4.9.4
@@ -44,6 +45,7 @@ dependencies:
   prettier: 2.8.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.10.0
   tailwindcss: 3.2.6_aesdjsunmf4wiehhujt67my7tu
   ts-node: 10.9.1_4bewfcp2iebiwuold25d6rgcsy
   typescript: 4.9.5
@@ -2794,6 +2796,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: false
+
+  /tailwind-merge/1.10.0:
+    resolution: {integrity: sha512-WFnDXSS4kFTZwjKg5/oZSGzBRU/l+qcbv5NVTzLUQvJ9yovDAP05h0F2+ZFW0Lw9EcgRoc2AfURUdZvnEFrXKg==}
     dev: false
 
   /tailwindcss/3.2.6_aesdjsunmf4wiehhujt67my7tu:
