@@ -41,8 +41,10 @@ import Layout from "../layouts/Layout.astro";
         />
         <textarea
           class="textarea w-full max-w-xs mt-6"
+          name="message"
           rows={6}
           placeholder="Write a message..."
+          required
           minlength={8}
           maxlength={1024}></textarea>
         <button
