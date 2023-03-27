@@ -1,0 +1,57 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="usta.dev" description="Write a message">
+  <div
+    class="h-full min-h-screen w-full bg-[url('/images/background.png')] bg-[length:2000px_2000px] bg-fixed bg-repeat"
+  >
+    <div class="min-h-screen w-full bg-bgLayer font-bungee">
+      <div class="navbar">
+        <a
+          class="btn btn-ghost normal-case text-xl text-neutral-content"
+          href="/"><Icon class="w-8" name="ic:baseline-arrow-back" /></a
+        >
+      </div>
+      <form
+        class="flex flex-col justify-center items-center"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <h1 class="text-3xl mt-6 text-neutral-content">Contact</h1>
+        <input
+          type="text"
+          name="full-name"
+          placeholder="Full name"
+          class="input w-full max-w-xs mt-6"
+          required
+          minlength={5}
+          maxlength={50}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="input w-full max-w-xs mt-6"
+          required
+          minlength={8}
+          maxlength={50}
+        />
+        <textarea
+          class="textarea w-full max-w-xs mt-6"
+          name="message"
+          rows={6}
+          placeholder="Write a message..."
+          required
+          minlength={8}
+          maxlength={1024}></textarea>
+        <button
+          class="btn btn-secondary w-full max-w-xs mt-6 text-xl"
+          type="submit">Submit</button
+        >
+      </form>
+    </div>
+  </div>
+</Layout>
