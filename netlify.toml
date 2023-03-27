@@ -1,0 +1,4 @@
+[build]
+  publish = "dist"
+  command = "pnpm build"
+  environment = { NODE_VERSION = "18.14.0" }
