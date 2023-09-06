@@ -6,51 +6,62 @@ import {
   LinkedInIcon,
   StackOverflowIcon,
 } from "./icons";
+import { Image } from "astro:assets";
+import Usta from "../assets/usta.jpg";
+import UstaBeard from "../assets/usta-beard.jpg";
 ---
 
 <Layout title="usta.dev" description="Welcome to usta.dev">
   <div
-    class="h-full min-h-screen min-w-screen w-full bg-[url('/images/background.png')] bg-[length:2000px_2000px] bg-fixed bg-repeat"
+    id="hero"
+    class="hero h-full min-h-screen font-bungee text-neutral-content select-none"
   >
-    <div
-      class="hero h-full min-h-screen w-full bg-bgLayer font-bungee text-neutral-content"
-    >
-      <div class="hero-content flex-col lg:flex-row lg:items-stretch">
-        <img
-          alt="Usta Himself"
-          src="/images/usta4.jpg"
-          class="max-w-[240px] rounded-lg shadow-2xl md:max-w-xs"
-        />
-        <div
-          class="flex flex-col items-center justify-between gap-6 md:items-start"
+    <div class="hero-content flex-col lg:flex-row lg:items-stretch">
+      <Image
+        id="usta"
+        alt="Usta Himself"
+        src={Usta}
+        width={640}
+        class="max-w-[240px] rounded-lg shadow-2xl md:max-w-xs"
+      />
+      <Image
+        id="usta-beard"
+        alt="Usta With Beard"
+        src={UstaBeard}
+        width={640}
+        class="max-w-[240px] rounded-lg shadow-2xl md:max-w-xs hidden"
+      />
+      <div
+        class="flex flex-col items-center justify-between gap-6 md:items-start"
+      >
+        <h1
+          id="hello"
+          class="text-center font-bungeeShade text-6xl font-bold tracking-wider md:text-start md:text-7xl"
         >
-          <h1
-            class="text-center font-bungeeShade text-6xl font-bold tracking-wider md:text-start md:text-7xl"
-          >
-            Hello!
-          </h1>
-          <div
-            class="flex w-11/12 grow flex-col justify-between md:w-full md:text-lg"
-          >
-            <div>My name is Usta.</div>
-            <div>I&apos;m a software engineer based in Tokyo, Japan.</div>
-            <div class="hidden md:block">
-              In my personal life, I enjoy doing CrossFit, cooking rather
-              interesting food, listening to German rap music and organizing
-              parties.
-            </div>
-            <div>
-              Checkout my <a
-                href="https://l.usta.dev/blog"
-                class="link-hover link-info"
-                target="_blank">blog</a
-              > and my <a
-                href="https://l.usta.dev/github"
-                class="link-hover link-info"
-                target="_blank">open source projects</a
-              >.
-            </div>
-            <!-- <div>
+          Hello!
+        </h1>
+        <div
+          class="flex w-11/12 grow flex-col justify-between md:w-full md:text-lg"
+        >
+          <div>My name is Usta.</div>
+          <div>I&apos;m a software engineer based in Tokyo, Japan.</div>
+          <div class="hidden md:block">
+            In my personal life, I enjoy doing CrossFit, cooking rather
+            interesting food, listening to German rap music and organizing
+            parties.
+          </div>
+          <div>
+            Checkout my <a
+              href="https://l.usta.dev/blog"
+              class="link-hover link-info"
+              target="_blank">blog</a
+            > and my <a
+              href="https://l.usta.dev/github"
+              class="link-hover link-info"
+              target="_blank">open source projects</a
+            >.
+          </div>
+          <!-- <div>
               On this website, you can find my{" "}
               <a href="/portfolio" class="link-hover link-info"> portfolio</a>
               ,{" "}
@@ -65,71 +76,92 @@ import {
               </a>
               .
             </div> -->
+        </div>
+        <div
+          class="flex flex-col-reverse items-center justify-center md:justify-between gap-6 w-full md:flex-row"
+        >
+          <div class="flex flex-row justify-center gap-4 lg:justify-start">
+            <a
+              href="https://l.usta.dev/github"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon
+                className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
+              />
+            </a>
+            <a
+              href="https://l.usta.dev/stackoverflow"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StackOverflowIcon
+                className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
+              />
+            </a>
+            <a
+              href="https://l.usta.dev/linkedin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon
+                className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
+              />
+            </a>
+            <a
+              href="https://l.usta.dev/instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon
+                className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
+              />
+            </a>
           </div>
-          <div
-            class="flex flex-col-reverse items-center justify-center md:justify-between gap-6 w-full md:flex-row"
-          >
-            <div class="flex flex-row justify-center gap-4 lg:justify-start">
-              <a
-                href="https://l.usta.dev/github"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHubIcon
-                  className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
-                />
-              </a>
-              <a
-                href="https://l.usta.dev/stackoverflow"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <StackOverflowIcon
-                  className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
-                />
-              </a>
-              <a
-                href="https://l.usta.dev/linkedin"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedInIcon
-                  className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
-                />
-              </a>
-              <a
-                href="https://l.usta.dev/instagram"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <InstagramIcon
-                  className="h-full w-12 fill-neutral-content transition-all hover:cursor-pointer"
-                />
-              </a>
-            </div>
-            <div class="flex gap-6 w-full justify-center item-stretch">
-              <a
-                class="btn-secondary btn btn-lg h-full text-2xl whitespace-nowrap"
-                href="https://amzn.to/3XZN6mK"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Usta Sauce™️
-              </a>
-              <a class="btn-accent btn btn-lg text-2xl" href="/contact">
-                Contact
-              </a>
-              <!-- <a
+          <div class="flex gap-6 w-full justify-center item-stretch">
+            <a
+              class="btn-secondary btn btn-lg h-full text-2xl flex items-center shrink"
+              href="https://amzn.to/3XZN6mK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Usta Sauce™️
+            </a>
+            <a
+              class="btn-accent btn btn-lg text-2xl flex items-center"
+              style="height: unset"
+              href="/contact"
+            >
+              Contact
+            </a>
+            <!-- <a
                 class="btn-accent btn grow-0 w-2/5 btn-lg text-2xl"
                 target="_blank"
                 href="https://resume.usta.dev"
               >
                 Resume
               </a> -->
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </Layout>
+
+<script>
+  let counter = 0;
+
+  document.querySelector("#hero")?.addEventListener("click", () => {
+    if (counter > 8) {
+      document.querySelector("#hello")!.innerHTML = "Salam Alaikum!";
+      document.querySelector("#usta")?.classList.add("hidden");
+      document.querySelector("#usta-beard")?.classList.remove("hidden");
+      counter = 0;
+    } else if (counter <= 1) {
+      document.querySelector("#hello")!.innerHTML = "Hello!";
+      document.querySelector("#usta-beard")?.classList.add("hidden");
+      document.querySelector("#usta")?.classList.remove("hidden");
+    }
+    counter++;
+  });
+</script>

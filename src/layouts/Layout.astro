@@ -7,8 +7,12 @@ export interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html data-theme="emerald" lang="en">
+<!doctype html>
+<html
+  data-theme="emerald"
+  lang="en"
+  class="fixed overflow-auto left-0 right-0 top-0 bottom-0"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +20,10 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <slot />
+  <body
+    class="h-full m-auto overflow-auto bg-[url('/images/background.png')] bg-[length:2000px_2000px] bg-fixed bg-repeat"
+  >
+    <div class="bg-bgLayer"><slot /></div>
   </body>
 </html>
 <style is:global>
