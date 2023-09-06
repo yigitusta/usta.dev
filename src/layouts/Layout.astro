@@ -20,6 +20,20 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    type="text/partytown"
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-3LSFTBRKF5"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-3LSFTBRKF5");
+  </script>
   <body
     class="h-full m-auto overflow-auto bg-[url('/images/background.png')] bg-[length:2000px_2000px] bg-fixed bg-repeat"
   >
